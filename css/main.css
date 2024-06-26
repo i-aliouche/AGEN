@@ -1,0 +1,246 @@
+:root {
+  --dark: #291c3a;
+  --dusk: #331c52;
+  --bright: #8121d0;
+  --light: #dccfed;
+  --sky: #e1ebed;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ======== Start Framework ======== */
+.main-btn {
+  background-color: var(--bright);
+  transition: 0.6s;
+}
+.main-btn:hover {
+  transform: scale(1.03);
+}
+/* ======== End Framework ======== */
+
+/* ======== Start Scroll Bar ======== */
+::-webkit-scrollbar {
+  width: 18px;
+  background: var(--bright);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--light);
+  border: 2px solid var(--bright);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--sky);
+}
+/* ======== End Scroll Bar ======== */
+
+/* ===== Start NavBar ===== */
+.navbar {
+  background-color: var(--bright);
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--light);
+  font-weight: 600;
+  opacity: 90%;
+  transition: 0.3s;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:active {
+  color: white;
+  opacity: 100%;
+}
+.nav-btn {
+  color: var(--bright);
+  transition: 0.6s;
+}
+.nav-btn:hover {
+  transform: scale(1.03);
+}
+.navbar .navbar-toggler {
+  border: 2px solid white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* ===== End NavBar ===== */
+
+/* ===== Start Hero Section ===== */
+.hero-section {
+  background-color: var(--dusk);
+}
+.hero-section h1 {
+  color: var(--light);
+  font-size: 3.5rem;
+}
+@media (min-width: 1200px) {
+  .hero-section .hero-img img {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .hero-section .hero-img img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+/* ===== End Hero Section ===== */
+
+/* ===== Start About Section ===== */
+.about-section {
+  background-color: var(--sky);
+}
+.about-section h1 {
+  color: var(--bright);
+  font-size: 3.5rem;
+}
+@media (min-width: 1200px) {
+  .about-section .about-img img {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .about-section .about-img img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+/* ===== End About Section ===== */
+
+/* ===== Start Services Section ===== */
+.services-section {
+  background-color: var(--light);
+}
+.services-section h1 {
+  color: var(--bright);
+  font-size: 3.5rem;
+  position: relative;
+}
+.services-section .box {
+  background-color: var(--sky);
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  border-bottom: 3px solid transparent;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.services-section .box:hover {
+  border-color: var(--bright);
+  transform: translateY(-5px);
+}
+.services-section .box svg {
+  margin-bottom: 15px;
+  color: var(--bright);
+  font-size: 2.2rem;
+}
+.services-section .box .title {
+  color: var(--dusk);
+  margin-bottom: 22px;
+}
+.services-section .box .description {
+  color: var(--dark);
+}
+/* ===== End Services Section ===== */
+
+/* ===== Start Team Section ===== */
+.team-section {
+  background-color: var(--sky);
+}
+.team-section h1 {
+  color: var(--bright);
+  font-size: 3.5rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.team-section .box ul li svg {
+  font-size: 0.8rem;
+  color: var(--bright) !important;
+}
+.team-section .box {
+  position: relative;
+}
+.team-section .box-content {
+  background-color: var(--light);
+  padding: 112px 32px 8px;
+  border-radius: 25px;
+}
+@media (max-width: 992px) {
+  .team-section .box {
+    margin-bottom: 128px;
+  }
+  .team-section .box-content {
+    padding: 128px 32px 8px;
+  }
+}
+.team-section .box img {
+  border: 5px solid var(--light);
+  border-radius: 50%;
+  max-width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+}
+.team-section .box img:hover {
+  top: -16px;
+}
+.team-section .box ul svg {
+  color: white;
+  transition: 0.6s;
+}
+.team-section .box ul svg:hover,
+.team-section .box ul svg:focus {
+  transform: scale(1.2);
+}
+/* ===== End Team Section ===== */
+
+/* ===== Start consultation Section ===== */
+.consultation-section {
+  background-color: var(--light);
+}
+.consultation-section h1 {
+  color: var(--bright);
+  font-size: 3.5rem;
+  position: relative;
+}
+/* ===== End consultation Section ===== */
+
+/* ===== Start Footer ===== */
+.footer {
+  background-color: var(--dusk);
+}
+.footer .links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 3px;
+  transition: 0.3s;
+}
+.footer .links a:hover,
+.footer .links a:focus {
+  color: white;
+}
+.footer .links ul li svg {
+  font-size: 0.8rem;
+  color: var(--bright) !important;
+}
+.contact ul svg {
+  color: white;
+  transition: 0.6s;
+}
+.contact ul svg:hover,
+.contact ul svg:focus {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .footer .row {
+    text-align: center;
+  }
+  .footer .contact ul {
+    justify-content: center;
+  }
+}
+/* ===== End Footer ===== */
