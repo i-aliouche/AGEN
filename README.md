@@ -13,4 +13,4 @@ The AGEN landing page features a modern and vibrant color scheme with purple and
 - **Design Inspiration**: This project's design is inspired by a variety of online resources, reflecting a blend of creativity and current web trends.
 
 ## Preview
-[!Theme Preview](https://github.com/i-aliouche/AGEN/blob/main/screenshot.png?raw=true)
+[!Theme Preview](https://github.com/i-aliouche/AGEN/blob/main/Preview.png)
